@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Платформер: Приключение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        
+        <div class="ui-panel">
+            <div class="score-board">
+                <span>⭐ Очки: <span id="scoreValue">0</span></span>
+                <span>❤️ Жизни: <span id="livesValue">3</span></span>
+                <span>💰 Монеты: <span id="coinsValue">0</span>/<span id="totalCoinsValue">0</span></span>
+            </div>
+            <div class="controls-info">
+                <span>◀  ▶  — движение (A/D или стрелки)</span>
+                <span>⬆  или  ПРОБЕЛ  — прыжок</span>
+                <span>R — рестарт</span>
+            </div>
+            <div class="game-buttons">
+                <button id="startBtn">▶ Старт</button>
+                <button id="pauseBtn">⏸ Пауза</button>
+                <button id="restartBtn">🔄 Рестарт</button>
+            </div>
+        </div>
+        
+        <div id="messageOverlay" class="message-overlay hidden">
+            <div class="message-content">
+                <h2 id="messageTitle">Игра окончена</h2>
+                <p id="messageText">Нажмите "Старт" для новой игры</p>
+                <button id="messageBtn">ОК</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
