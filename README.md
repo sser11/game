@@ -29,7 +29,6 @@ Vanilla JavaScript (ES6+) — вся игровая логика
 ├── game.js             # Полная игровая логика
 ├── README.md           # Документация
 └── screenshots/        # Папка со скриншотами
-    ├── menu.png
     ├── gameplay.png
     └── win.png
 
